@@ -26,4 +26,6 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/hacksu-test/web:latest
+          secrets: |
+            "github_token=${{ secrets.GITHUB_TOKEN }}"
       
